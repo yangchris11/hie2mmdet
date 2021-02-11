@@ -25,6 +25,25 @@ bash ffmpeg_video2image_HIE20.sh
 
 to generate jpg images from the videos. **You will need to change some path in the script.**
 
+The images folder's structure should be like this to avoid problem in the later stage training(mmdetection).
+
+```
+HIE20
+├── labels
+├── videos
+└── images
+      ├── 1
+          ├── 000000.jpg  
+          ├── 000001.jpg
+          ... 
+          └── 001797.jpg
+      ├── 2
+      ├── 3
+      ├── 4
+      ...
+      └── 19
+```
+
 ## step 3 (Optional)
 
 Then run
