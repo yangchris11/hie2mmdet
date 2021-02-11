@@ -1,5 +1,10 @@
 # hie2mmdet
 
+
+## Requirement
+
+- ffmpeg
+
 ## step 1
 
 Download the `HIE20.zip` file and unzip. You should have a folder named HIE20 with subfolders like this
