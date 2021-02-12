@@ -22,12 +22,12 @@ def main():
         'images': [],
         'annotations': [],
         'categories': [
-            {'id': 0, 'name': 'person'},
+            {'id': 1, 'name': 'person'},
         ]
     }
 
     for seq_idx in tqdm.tqdm(metadata.keys()):
-        json_file = 'labels/track2&3/track2/' + seq_idx + '.json'
+        json_file = 'labels/train/track2&3/' + seq_idx + '.json'
         with open(json_file) as f:
             data = json.load(f)
 
@@ -52,8 +52,10 @@ def main():
 
                 coco_anno = {
                     'image_id': global_img_idx,
+                    'iscrowd': 0,
+                    'area': (x2-x1) * (y2-y1),
                     'bbox': [x1, y1, x2-x1, y2-y1],
-                    'category_id': 0,
+                    'category_id': 1,
                     'id': global_anno_idx
                 }
                 output_json['annotations'].append(coco_anno)
