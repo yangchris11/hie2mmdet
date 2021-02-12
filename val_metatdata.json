@@ -1,0 +1,30 @@
+{
+    "3": {
+        "seq_name": "hm_in_airport",
+        "height": 720,
+        "width": 1280,
+        "fps": 25,
+        "frames": 1434
+    },
+    "7": {
+        "seq_name": "hm_in_square1",
+        "height": 1080,
+        "width": 1920,
+        "fps": 30,
+        "frames": 911
+    },
+    "8": {
+        "seq_name": "hm_in_shopping_mall1",
+        "height": 1080,
+        "width": 1920,
+        "fps": 30,
+        "frames": 2641
+    },
+    "17": {
+        "seq_name": "hm_in_square2",
+        "height": 720,
+        "width": 1280,
+        "fps": 30,
+        "frames": 966
+    }
+}

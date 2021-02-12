@@ -1,56 +1,70 @@
 import json
 import tqdm
 
-global_img_idx = 0
-global_anno_idx = 0
+import argparse
 
-metadata_file = 'metadata.json'
-with open(metadata_file) as f:
-    metadata = json.load(f)
+def main():
 
-output_json = {
-    'images': [],
-    'annotations': [],
-    'categories': [
-        {'id': 0, 'name': 'person'},
-    ]
-}
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--metadata', default='metadata.json')
+    parser.add_argument('--outfile',  default='output.json')
 
-for seq_idx in tqdm.tqdm(metadata.keys()):
-    json_file = 'labels/track2&3/track2/' + seq_idx + '.json'
-    with open(json_file) as f:
-        data = json.load(f)
+    args = parser.parse_args()
 
-    annolist = data['annolist']
+    global_img_idx = 0
+    global_anno_idx = 0
 
-    for i, anno in enumerate(annolist):
+    metadata_file = args.metadata
+    with open(metadata_file) as f:
+        metadata = json.load(f)
 
-        image_name = anno['image'][0]['name']
-        anno_info = anno['annorect']
+    output_json = {
+        'images': [],
+        'annotations': [],
+        'categories': [
+            {'id': 0, 'name': 'person'},
+        ]
+    }
 
-        coco_img = {
-            'file_name': seq_idx + '/' + image_name,
-            'height': metadata[seq_idx]['height'],
-            'width': metadata[seq_idx]['width'],
-            'id': global_img_idx
-        }
-        output_json['images'].append(coco_img)
+    for seq_idx in tqdm.tqdm(metadata.keys()):
+        json_file = 'labels/track2&3/track2/' + seq_idx + '.json'
+        with open(json_file) as f:
+            data = json.load(f)
 
-        for j in range(len(anno_info)):
-            x1, x2 = anno_info[j]['x1'][0], anno_info[j]['x2'][0]
-            y1, y2 = anno_info[j]['y1'][0], anno_info[j]['y2'][0]
+        annolist = data['annolist']
 
-            coco_anno = {
-                'image_id': global_img_idx,
-                'bbox': [x1, y1, x2-x1, y2-y1],
-                'category_id': 0,
-                'id': global_anno_idx
+        for i, anno in enumerate(annolist):
+
+            image_name = anno['image'][0]['name']
+            anno_info = anno['annorect']
+
+            coco_img = {
+                'file_name': seq_idx + '/' + image_name,
+                'height': metadata[seq_idx]['height'],
+                'width': metadata[seq_idx]['width'],
+                'id': global_img_idx
             }
-            output_json['annotations'].append(coco_anno)
+            output_json['images'].append(coco_img)
 
-            global_anno_idx += 1
+            for j in range(len(anno_info)):
+                x1, x2 = anno_info[j]['x1'][0], anno_info[j]['x2'][0]
+                y1, y2 = anno_info[j]['y1'][0], anno_info[j]['y2'][0]
 
-        global_img_idx += 1
+                coco_anno = {
+                    'image_id': global_img_idx,
+                    'bbox': [x1, y1, x2-x1, y2-y1],
+                    'category_id': 0,
+                    'id': global_anno_idx
+                }
+                output_json['annotations'].append(coco_anno)
 
-with open('hie_train.json', 'w') as outfile:
-    json.dump(output_json, outfile)
+                global_anno_idx += 1
+
+            global_img_idx += 1
+
+    with open(args.outfile, 'w') as outfile:
+        json.dump(output_json, outfile)
+
+
+if __name__ == '__main__':
+    main()
