@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="732c129b-36b5-4680-863c-3a007144b94b" name="ipl" url="http://128.95.28.149">
+        <fileTransfer rootFolder="/home/chris" accessType="SFTP" host="128.95.28.149" port="22" sshConfigId="60659d5c-0c1a-4596-9f7e-d12ed2f21be5" sshConfig="chris@128.95.28.149:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

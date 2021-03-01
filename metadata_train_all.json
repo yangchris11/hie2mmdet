@@ -1,0 +1,135 @@
+
+    "1": {
+        "seq_name": "hm_in_stair1",
+        "height": 300,
+        "width": 640,
+        "fps": 25,
+        "frames": 1798
+    },
+    "2": {
+        "seq_name": "hm_in_lab1",
+        "height": 720,
+        "width": 1280,
+        "fps": 30,
+        "frames": 4819
+    },
+    "3": {
+        "seq_name": "hm_in_airport",
+        "height": 720,
+        "width": 1280,
+        "fps": 25,
+        "frames": 1434
+    },
+    "4": {
+        "seq_name": "hm_in_dining_room1",
+        "height": 1080,
+        "width": 1660,
+        "fps": 30,
+        "frames": 952
+    },
+    "5": {
+        "seq_name": "hm_in_earthquake",
+        "height": 720,
+        "width": 1280,
+        "fps": 25,
+        "frames": 2154
+    },
+    "6": {
+        "seq_name": "hm_in_fighting1",
+        "height": 720,
+        "width": 1280,
+        "fps": 25,
+        "frames": 3711
+    },
+    "7": {
+        "seq_name": "hm_in_square1",
+        "height": 1080,
+        "width": 1920,
+        "fps": 30,
+        "frames": 911
+    },
+    "8": {
+        "seq_name": "hm_in_shopping_mall1",
+        "height": 1080,
+        "width": 1920,
+        "fps": 30,
+        "frames": 2641
+    },
+    "9": {
+        "seq_name": "hm_in_jail",
+        "height": 712,
+        "width": 1120,
+        "fps": 15,
+        "frames": 700
+    },
+    "10": {
+        "seq_name": "hm_in_kindergarten",
+        "height": 344,
+        "width": 640,
+        "fps": 25,
+        "frames": 3300
+    },
+    "11": {
+        "seq_name": "hm_in_shopping_mall2",
+        "height": 720,
+        "width": 1280,
+        "fps": 15,
+        "frames": 217
+    },
+    "12": {
+        "seq_name": "hm_in_escalator",
+        "height": 720,
+        "width": 1280,
+        "fps": 30,
+        "frames": 564
+    },
+    "13": {
+        "seq_name": "hm_in_playground",
+        "height": 1080,
+        "width": 1920,
+        "fps": 25,
+        "frames": 1416
+    },
+    "14": {
+        "seq_name": "hm_in_school",
+        "height": 720,
+        "width": 1280,
+        "fps": 25,
+        "frames": 1508
+    },
+    "15": {
+        "seq_name": "hm_in_fighting2",
+        "height": 720,
+        "width": 1280,
+        "fps": 25,
+        "frames": 475
+    },
+    "16": {
+        "seq_name": "hm_in_road",
+        "height": 1080,
+        "width": 1920,
+        "fps": 15,
+        "frames": 700
+    },
+    "17": {
+        "seq_name": "hm_in_square2",
+        "height": 720,
+        "width": 1280,
+        "fps": 30,
+        "frames": 966
+    },
+    "18": {
+        "seq_name": "hm_in_stair2",
+        "height": 720,
+        "width": 1280,
+        "fps": 20,
+        "frames": 1614
+    },
+    "19": {
+        "seq_name": "hm_in_fighting3",
+        "height": 360,
+        "width": 640,
+        "fps": 30,
+        "frames": 3063
+    }
+}

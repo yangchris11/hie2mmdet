@@ -1,0 +1,93 @@
+{
+  "20": {
+    "seq_name": "hm_in_waiting_hall",
+    "height": 562,
+    "width": 1280,
+    "fps": 30,
+    "frames": 1809
+  },
+  "21": {
+    "seq_name": "hm_in_bus",
+    "height": 258,
+    "width": 352,
+    "fps": 24,
+    "frames": 500
+  },
+  "22": {
+    "seq_name": "hm_in_dining_room2",
+    "height": 1080,
+    "width": 1920,
+    "fps": 30,
+    "frames": 700
+  },
+  "23": {
+    "seq_name": "hm_in_lab2",
+    "height": 720,
+    "width": 1280,
+    "fps": 30,
+    "frames": 2556
+  },
+  "24": {
+    "seq_name": "hm_in_subway_station",
+    "height": 576,
+    "width": 704,
+    "fps": 25,
+    "frames": 1409
+  },
+  "25": {
+    "seq_name": "hm_in_passage",
+    "height": 1080,
+    "width": 1920,
+    "fps": 30,
+    "frames": 3070
+  },
+  "26": {
+    "seq_name": "hm_in_fighting4",
+    "height": 344,
+    "width": 456,
+    "fps": 30,
+    "frames": 1705
+  },
+  "27": {
+    "seq_name": "hm_in_shopping_mall3",
+    "height": 720,
+    "width": 1280,
+    "fps": 30,
+    "frames": 1054
+  },
+  "28": {
+    "seq_name": "hm_in_restaurant",
+    "height": 720,
+    "width": 1280,
+    "fps": 24,
+    "frames": 1052
+  },
+  "29": {
+    "seq_name": "hm_in_accident",
+    "height": 360,
+    "width": 624,
+    "fps": 25,
+    "frames": 766
+  },
+  "30": {
+    "seq_name": "hm_in_stair3",
+    "height": 480,
+    "width": 640,
+    "fps": 25,
+    "frames": 954
+  },
+  "31": {
+    "seq_name": "hm_in_crossroad",
+    "height": 720,
+    "width": 1280,
+    "fps": 30,
+    "frames": 423
+  },
+  "32": {
+    "seq_name": "hm_in_robbery",
+    "height": 720,
+    "width": 1280,
+    "fps": 30,
+    "frames": 879
+  }
+}
